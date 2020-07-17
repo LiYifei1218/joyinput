@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400" minWidth="600" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UIController">
+   <children>
+      <Rectangle fill="#fdfffd" height="400.0" stroke="#ffffff00" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+      <Rectangle fill="#9dbcd6" height="50.0" stroke="#ffffff00" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+      <Rectangle arcHeight="100.0" arcWidth="100.0" fill="#daeaefb2" height="200.0" scaleX="1.1" scaleY="1.1" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="200.0" x="50.0" y="100.0" />
+      <Rectangle arcHeight="100.0" arcWidth="100.0" fill="#daeaefb2" height="200.0" scaleX="1.1" scaleY="1.1" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="200.0" x="350.0" y="100.0" />
+      <Circle centerX="450.0" centerY="200.0" fill="#eaeaef" radius="100.0" stroke="#9dbcd6" strokeType="INSIDE" strokeWidth="3.0" />
+      <Circle centerX="150.0" centerY="200.0" fill="#eaeaef" radius="100.0" stroke="#9dbcd6" strokeType="INSIDE" strokeWidth="3.0" />
+      <Circle centerX="150.0" centerY="200.0" fill="#eaeaef" radius="70.0" stroke="#9dbcd6" strokeType="INSIDE" strokeWidth="3.0" />
+      <Circle centerX="450.0" centerY="200.0" fill="#eaeaef" radius="70.0" stroke="#9dbcd6" strokeType="INSIDE" strokeWidth="3.0" />
+      <Button fx:id="startButton" cancelButton="true" contentDisplay="CENTER" layoutX="10.0" layoutY="8.0" mnemonicParsing="false" onAction="#start" prefHeight="35.0" prefWidth="70.0" style="-fx-background-radius: 10; -fx-background-color: daeaef; -fx-border-color: ff3d2e; -fx-border-radius: 5; -fx-border-width: 5; -fx-border-insets: -2;" text="Start">
+         <font>
+            <Font name="San Francisco Display Bold" size="15.0" />
+         </font></Button>
+      <Text fx:id="connectionIndicatorText" fill="WHITE" layoutX="422.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Connection:" visible="true">
+         <font>
+            <Font name="San Francisco Display Bold" size="20.0" />
+         </font></Text>
+      <Circle fx:id="connectionIndicator" fill="#ffe21f" layoutX="574.0" layoutY="25.0" radius="15.0" stroke="#dae9ed" strokeWidth="5.0" visible="true" />
+      <Arc fx:id="leftArc" fill="#9dbdc6" layoutX="150.0" layoutY="200.0" length="50.0" opacity="0" radiusX="100.0" radiusY="100.0" startAngle="-25.0" type="ROUND" />
+      <Arc fx:id="rightArc" fill="#9dbdc6" layoutX="450.0" layoutY="200.0" length="50.0" opacity="0" radiusX="100.0" radiusY="100.0" startAngle="-25.0" type="ROUND" />
+      <Text fx:id="shiftIndicator" fill="WHITE" layoutX="117.0" layoutY="33.0" stroke="#ff3d2e" strokeType="OUTSIDE" strokeWidth="0.0" text="SHIFT">
+         <font>
+            <Font name="San Francisco Display Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="lout0" fill="#272f32" layoutX="221.0" layoutY="177.0" stroke="#ff3d2e" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="T">
+         <font>
+            <Font name="San Francisco Display Bold" size="20.0" />
+         </font></Text>
+      <Text fx:id="lout3" fill="#272f32" layoutX="61.0" layoutY="208.0" stroke="#ff3d2e" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="A">
+         <font>
+            <Font name="San Francisco Display Bold" size="20.0" />
+         </font></Text>
+      <Text fx:id="lout5" fill="#272f32" layoutX="158.0" layoutY="291.0" stroke="#ff3d2e" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="V">
+         <font>
+            <Font name="San Francisco Display Bold" size="20.0" />
+         </font></Text>
+      <Text fx:id="lout4" fill="#272f32" layoutX="97.0" layoutY="275.0" stroke="#ff3d2e" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="Z">
+         <font>
+            <Font name="San Francisco Display Bold" size="20.0" />
+         </font></Text>
+      <Text fx:id="lout6" fill="#272f32" layoutX="215.0" layoutY="249.0" stroke="#ff3d2e" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="G">
+         <font>
+            <Font name="San Francisco Display Bold" size="20.0" />
+         </font></Text>
+      <Text fx:id="lout1" fill="#272f32" layoutX="151.0" layoutY="124.0" stroke="#ff3d2e" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="W">
+         <font>
+            <Font name="San Francisco Display Bold" size="20.0" />
+         </font></Text>
+      <Text fx:id="lout2" fill="#272f32" layoutX="85.0" layoutY="147.0" stroke="#ff3d2e" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="Q">
+         <font>
+            <Font name="San Francisco Display Bold" size="20.0" />
+         </font></Text>
+      <Text fx:id="lin6" fill="#272f32" layoutX="187.0" layoutY="232.0" stroke="#ff3d2e" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="C">
+         <font>
+            <Font name="San Francisco Display Bold" size="20.0" />
+         </font></Text>
+      <Text fx:id="lin2" fill="#272f32" layoutX="111.0" layoutY="173.0" stroke="#ff3d2e" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="E">
+         <font>
+            <Font name="San Francisco Display Bold" size="20.0" />
+         </font></Text>
+      <Text fx:id="lin4" fill="#272f32" layoutX="115.0" layoutY="245.0" stroke="#ff3d2e" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="S">
+         <font>
+            <Font name="San Francisco Display Bold" size="20.0" />
+         </font></Text>
+      <Text fx:id="lin0" fill="#272f32" layoutX="191.0" layoutY="191.0" stroke="#ff3d2e" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="F">
+         <font>
+            <Font name="San Francisco Display Bold" size="20.0" />
+         </font></Text>
+      <Text fx:id="lin5" fill="#272f32" layoutX="152.0" layoutY="255.0" stroke="#ff3d2e" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="X">
+         <font>
+            <Font name="San Francisco Display Bold" size="20.0" />
+         </font></Text>
+      <Text fx:id="lin3" fill="#272f32" layoutX="96.0" layoutY="208.0" stroke="#ff3d2e" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="D">
+         <font>
+            <Font name="San Francisco Display Bold" size="20.0" />
+         </font></Text>
+      <Text fx:id="lin1" fill="#272f32" layoutX="151.0" layoutY="161.0" stroke="#ff3d2e" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="R">
+         <font>
+            <Font name="San Francisco Display Bold" size="20.0" />
+         </font></Text>
+      <Text fx:id="rin0" fill="#272f32" layoutX="490.0" layoutY="190.0" stroke="#ff3d2e" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="K">
+         <font>
+            <Font name="San Francisco Display Bold" size="20.0" />
+         </font></Text>
+      <Text fx:id="rin1" fill="#272f32" layoutX="455.0" layoutY="160.0" stroke="#ff3d2e" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="O">
+         <font>
+            <Font name="San Francisco Display Bold" size="20.0" />
+         </font></Text>
+      <Text fx:id="rin2" fill="#272f32" layoutX="416.0" layoutY="171.0" stroke="#ff3d2e" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="I">
+         <font>
+            <Font name="San Francisco Display Bold" size="20.0" />
+         </font></Text>
+      <Text fx:id="rin3" fill="#272f32" layoutX="399.0" layoutY="207.0" stroke="#ff3d2e" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="J">
+         <font>
+            <Font name="San Francisco Display Bold" size="20.0" />
+         </font></Text>
+      <Text fx:id="rin4" fill="#272f32" layoutX="413.0" layoutY="243.0" stroke="#ff3d2e" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="N">
+         <font>
+            <Font name="San Francisco Display Bold" size="20.0" />
+         </font></Text>
+      <Text fx:id="rin5" fill="#272f32" layoutX="460.0" layoutY="253.0" stroke="#ff3d2e" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text=",">
+         <font>
+            <Font name="San Francisco Display Bold" size="20.0" />
+         </font></Text>
+      <Text fx:id="rin6" fill="#272f32" layoutX="486.0" layoutY="230.0" stroke="#ff3d2e" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="M">
+         <font>
+            <Font name="San Francisco Display Bold" size="20.0" />
+         </font></Text>
+      <Text fx:id="rout0" fill="#272f32" layoutX="522.0" layoutY="174.0" stroke="#ff3d2e" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="P">
+         <font>
+            <Font name="San Francisco Display Bold" size="20.0" />
+         </font></Text>
+      <Text fx:id="rout1" fill="#272f32" layoutX="470.0" layoutY="129.0" stroke="#ff3d2e" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="U">
+         <font>
+            <Font name="San Francisco Display Bold" size="20.0" />
+         </font></Text>
+      <Text fx:id="rout2" fill="#272f32" layoutX="389.0" layoutY="147.0" stroke="#ff3d2e" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="Y">
+         <font>
+            <Font name="San Francisco Display Bold" size="20.0" />
+         </font></Text>
+      <Text fx:id="rout3" fill="#272f32" layoutX="359.0" layoutY="207.0" stroke="#ff3d2e" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="H">
+         <font>
+            <Font name="San Francisco Display Bold" size="20.0" />
+         </font></Text>
+      <Text fx:id="rout4" fill="#272f32" layoutX="393.0" layoutY="272.0" stroke="#ff3d2e" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="B">
+         <font>
+            <Font name="San Francisco Display Bold" size="20.0" />
+         </font></Text>
+      <Text fx:id="rout5" fill="#272f32" layoutX="469.0" layoutY="287.0" stroke="#ff3d2e" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text=".">
+         <font>
+            <Font name="San Francisco Display Bold" size="20.0" />
+         </font></Text>
+      <Text fx:id="rout6" fill="#272f32" layoutX="517.0" layoutY="250.0" stroke="#ff3d2e" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="L">
+         <font>
+            <Font name="San Francisco Display Bold" size="20.0" />
+         </font></Text>
+      <Circle centerX="150.0" centerY="200.0" fill="#eaeaef" radius="30.0" stroke="#9dbcd6" strokeType="INSIDE" strokeWidth="3.0" />
+      <Text fx:id="lzero" fill="#272f32" layoutX="-4.0" layoutY="1.0" stroke="#ff3d2e" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="SPACE" x="130.0" y="205.0">
+         <font>
+            <Font name="San Francisco Display Bold" size="15.0" />
+         </font></Text>
+      <Circle centerX="450.0" centerY="200.0" fill="#eaeaef" radius="30.0" stroke="#9dbcd6" strokeType="INSIDE" strokeWidth="3.0" />
+      <Text fx:id="rzero" fill="#272f32" layoutX="296.0" layoutY="1.0" stroke="#ff3d2e" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="SPACE" x="130.0" y="205.0">
+         <font>
+            <Font name="San Francisco Display Bold" size="15.0" />
+         </font></Text>
+   </children>
+</Pane>
